@@ -94,12 +94,10 @@ end
 -- Aimbot Tabs
 local AimbotTab = CoastingLibrary:CreateTab("Aimbot")
 local aMainSection = AimbotTab:CreateSection("Main")
-local aConfigSection = AimbotTab:CreateSection("Config")
 
 -- ESP Tabs
 local ESPTab = CoastingLibrary:CreateTab("ESP")
-local eMainSection = AimbotTab:CreateSection("Main")
-local eConfigSection = ESPTab:CreateSection("Config")
+local eMainSection = ESPTab:CreateSection("Main")
 
 aMainSection:CreateToggle("Aimbot", function(Value)
     if Value == true then
