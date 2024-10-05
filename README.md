@@ -7,5 +7,5 @@ Universal Script for FPS in Roblox
 
 [ Script ]
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/UncensoredUsers/UniversalFPS/main/Universal.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/UncensoredUsers/UniversalFPS/refs/heads/main/Universal.lua"))();
 ```
