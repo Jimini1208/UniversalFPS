@@ -1,5 +1,3 @@
--- Developed by Jimini1208(UncensoredUsers)
-
 local CoastingLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/UI-Libraries/main/Coasting%20Ui%20Lib/source.lua"))()
 local UIS = game:GetService("UserInputService")
 local Camera = game:GetService("Workspace").CurrentCamera
@@ -42,7 +40,7 @@ UIS.InputEnded:Connect(function(input)
 end)
 
 -- ESP Function
-function executeESP(selection)
+function executehighlightESP(selection)
     local highlight = Instance.new("Highlight")
     highlight.Name = "HighLight"
     if selection == true then
@@ -108,11 +106,11 @@ aMainSection:CreateToggle("Aimbot", function(Value)
     end
 end)
 
-eMainSection:CreateToggle("ESP", function(Value)
+eMainSection:CreateToggle("Highlight ESP", function(Value)
     if Value == true then
-        executeESP(false)
+        executehighlightESP(false)
     end
     if Value == false then
-        executeESP(true)
+        executehighlightESP(true)
     end
 end)
